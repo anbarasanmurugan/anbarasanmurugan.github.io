@@ -1,206 +1,707 @@
-<!DOCTYPE html>
 <html>
 
 <head>
+    <style>
+        .one {
+            position: absolute;
+            width: 1281px;
+            height: 2074px;
+            background: #FFFFFF;
+            border: 2px solid#0776A6;
+        }
 
-  <title>My first project</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
-  <style>
-    .parent-div {
-      position: absolute;
-      width: 850px;
-      height: 711.12px;
-      border: 2px solid skyblue;
-      background: #FFFFFF;
-      margin: 0 auto;
-      /* X: -415.01px;
-         Y: -342.06px;
-         W: 846.78px
-         H: 711.12px
-         Rotation: 0.34°
-          Fill: Solid
-            #FFFFFF */
-
-    }
-
-    .child-div {
-      position: relative;
-      width: 745px;
-      height: 280px;
-      background: #F9F4C8;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      left: 35px;
-      top: 50px;
-      padding: 30px;
-      padding-bottom: 5px;
-      padding-right: 3px;
-      font-family: 'Roboto', sans-serif;
-      ;
+        .two {
+            position: absolute;
+            width: 326px;
+            height: 71px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 71px;
+            color: #000000;
+            left: 90px;
+            top: 10px
+        }
 
 
-    }
 
 
-    img {
-      position: relative;
-      width: 765px;
-      height: 235px;
-      left: 40px;
-      top: 30px;
+        .three {
+            position: absolute;
+            width: 114px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            Display: inline;
+            left: 600px;
+            top: 45px
+        }
 
 
-    }
+        .four {
+            position: absolute;
+            width: 122px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            Display: inline;
+            left: 855px;
+            top: 45px
+        }
 
 
-    h2 {
+        .five {
+            position: absolute;
+            width: 128px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            left: 1090px;
+            top: 45px
+        }
 
-      position: relative;
-      display: inline;
-      left: 50px;
-
-    }
-
-    h3 {
-
-
-      position: relative;
-      display: inline;
-      width: 274px;
-      height: 41px;
-      font-family: 'Roboto', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
-      ;
-      color: #5200FF;
-      left: 380px;
-
-    }
-
-    h4 {
-
-      position: relative;
-      left: 300px;
-      top: 50px;
-      font-family: 'Roboto', sans-serif;
-      ;
-    }
+        .hen {
+            position: absolute;
+            width: 1140px;
+            height: 0px;
+            border: 1px solid #000000;
+            stroke: solid;
+            transform: rotate(0.11deg);
+            Display: inline;
+            left: 75px;
+            top: 100px;
+            background-color: #000000
+        }
 
 
-    .highlight-word-color {
 
-      color: blue;
+        .six {
+            position: absolute;
+            display: inline;
+            top: 200px;
+            width: 63vw;
+            text-align: justify;
+            left: 18rem;
+            font-size: 24px;
+            Line-height: 35.64px;
 
 
-    }
 
 
-    p {
-      position: relative;
-      font-family: 'Roboto', sans-serif;
-      ;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      color: #000000;
-      text-align: justify;
-    }
 
-    .row-container {
-      display: flex;
-      margin: 8px;
-    }
 
-    .label {
-      display: inline-block;
-      width: 8rem;
-      margin: 0;
-    }
 
-    .value {
-      width: 35rem;
-      margin: 0;
-    }
+        }
 
-    .rhodiumfont {
-      font-family: 'Rhodium Libre', serif;
-    }
-  </style>
+
+
+        .anbu_pic {
+            float: left;
+            position: absolute;
+            width: 250px;
+            top: 14rem;
+            left: 30px;
+            border-radius: 39px;
+            height: 324px;
+        }
+
+        .seven {
+            position: absolute;
+            width: 171px;
+            height: 53px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 53px;
+            color: #000000;
+            left: 80px;
+            top: 130px;
+
+        }
+
+        .six::first-letter {
+            font-size: 2em;
+        }
+
+        .eight {
+            position: absolute;
+            display: inline;
+            bottom: 2px;
+            width: 63vw;
+            text-align: justify;
+            right: 32rem;
+            font-size: 24px;
+            Line-height: 35.64px;
+            left: 30px;
+            top: 545;
+        }
+
+        .anbu1pic {
+            float: right;
+            position: absolute;
+            width: 250px;
+            top: 34rem;
+            left: 1020px;
+            border-radius: 39px;
+            height: 324px;
+        }
+
+        .nine {
+            position: absolute;
+            width: 197px;
+            height: 53px;
+            top: 800px;
+            left: 68px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 53px;
+            color: #000000;
+
+
+        }
+
+
+
+
+        .rectangle:hover {
+            width: 255px;
+            height: 301px;
+            background: #F1F1F1;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            top: 895px;
+            left: 25px;
+        }
+
+        .rectangle-wrapper {
+
+            position: absolute;
+            display: flex;
+        }
+
+
+
+
+        .blue {
+            position: absolute;
+            width: 133px;
+            height: 157px;
+            top: 910px;
+            left: 77px;
+
+
+        }
+
+        .rectangle:hover img {
+            transform: scale(1.3);
+        }
+
+        .rectangle:hover h2 {
+            color: #0776A6;
+        }
+
+
+        .ten {
+            position: absolute;
+            width: 227px;
+            height: 33px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #000000;
+            top: 1050px;
+            left: 27px;
+
+        }
+
+        .eleven {
+            position: absolute;
+            width: 227px;
+            height: 33px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #0776A6;
+            top: 1100px;
+            left: 27px;
+
+
+        }
+
+
+
+        /* .rectangle2 {
+
+            position: absolute;
+            width: 255px;
+            height: 301px;
+            background: #FFFCFC;
+            border-radius: 23px;
+            top: 900px;
+            left: 520px;
+        } */
+
+
+        .red {
+            position: absolute;
+            width: 134px;
+            height: 147px;
+            top: 920px;
+            left: 580px;
+
+
+        }
+
+        /* .red:hover {
+            transform: scale(1.3);
+        } */
+
+
+
+        .twelve {
+
+            position: absolute;
+            width: 186px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            color: #000000;
+            top: 1050px;
+            left: 570px;
+        }
+
+
+        .thirteen {
+
+            position: absolute;
+            width: 227px;
+            height: 33px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #000000;
+            top: 1100px;
+            left: 540px;
+        }
+
+
+
+        /* .rectangle3 {
+            position: absolute;
+            width: 255px;
+            height: 301px;
+            background: #FFFCFC;
+            border-radius: 25px;
+            top: 900px;
+            left: 1000px;
+        } */
+
+
+        .black {
+            position: absolute;
+            width: 120px;
+            height: 147px;
+            top: 920px;
+            left: 1060px;
+        }
+
+        /* .black:hover {
+            transform: scale(1.3);
+        } */
+
+        .fourteen {
+            position: absolute;
+            width: 120px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            color: #000000;
+            top: 1055px;
+            left: 1070px;
+
+        }
+
+
+
+        .fifteen {
+
+            position: absolute;
+            width: 227px;
+            height: 33px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #000000;
+            top: 1100px;
+            left: 1015px;
+
+        }
+
+
+        .sixteen {
+            position: absolute;
+            width: 205px;
+            height: 53px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 53px;
+            color: #000000;
+            top: 1200px;
+            left: 55px;
+
+
+
+
+
+        }
+
+        .input {
+            position: absolute;
+            width: 66px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            color: #000000;
+            top: 1300px;
+            left: 55px;
+
+        }
+
+        .seventeen {
+            position: absolute;
+            width: 370px;
+            height: 42px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            top: 1275px;
+            left: 180px;
+
+
+        }
+
+        .eighteen {
+            position: absolute;
+            width: 370px;
+            height: 42px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            top: 1350px;
+            left: 180px;
+
+
+
+
+        }
+
+
+
+        .nineteen {
+
+            position: absolute;
+            width: 370px;
+            height: 42px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            top: 1420px;
+            left: 180px;
+
+        }
+
+        .twenteen {
+            position: absolute;
+            width: 370px;
+            height: 140px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            top: 1490px;
+            left: 180px;
+
+
+        }
+
+        .twentyone {
+
+            position: absolute;
+            width: 505px;
+            height: 52px;
+            background: #0776A6;
+            border: 1px solid #FFFFFF;
+            ;
+            box-sizing: border-box;
+            border-radius: 10px;
+            Fill: Solid#0776A6;
+            top: 1685px;
+            left: 55px;
+
+        }
+
+
+        .twentythree {
+            position: absolute;
+            width: 92px;
+            height: 36px;
+            font-family: 'Rounded Mplus 1c';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            color: #FFFFFF;
+            background: #0776A6;
+            top: 1710px;
+            left: 240px;
+
+
+        }
+
+
+        .twentyfour {
+            position: absolute;
+            width: 500px;
+            height: 451px;
+            top: 1290px;
+            left: 750px;
+
+
+        }
+
+        .cow {
+            position: absolute;
+            width: 1165px;
+            height: 0px;
+            border: 1px solid #000000;
+            transform: rotate(0.05deg);
+            top: 1880px;
+            left: 70px;
+            background-color: #000000
+        }
+
+
+
+
+        .twentyfive {
+            position: absolute;
+            width: 304px;
+            height: 21px;
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+            color: #0776A6;
+            top: 1900px;
+            left: 500px;
+
+
+
+
+
+
+
+
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+    </style>
+    <title>Second Project</title>
+</head>
 
 <body>
+    <div class="container">
 
-
-  </head>
-
-  <body>
-    <div class="parent-div">
-      <h2>Anbarasan M</h2>
-      <h3>Exercise one-<span class="rhodiumfont">17<sup style="color:black">th</sup> march</span></h3>
-      <img src="dhanush.png" />
-      <div class="child-div">
-        <!--start of born-->
-        <div class="row-container">
-          <p class="label">Born:</p>
-          <p class="value">February 25,1983 in <span class="highlight-word-color">Madras,tamilnadu,india </span>
-          </p>
+        <h1 class="one"></h1>
+        <h1 class="two">DhanushAnbu</h1>
+        <h2 class="three"><a href="#Aboutme">About me</a></h2>
+        <h2 class="four"><a href="#Experience">Experience</a></h2>
+        <h2 class="five"><a href="#Contactme">contact me</a></h2>
+        <h2 class="seven">About me</h2>
+        <div>
+            <h2 class="hen"></h2>
         </div>
 
-        <!--end of born-->
-        <!--start of birth name -->
-        <div class="row-container">
-          <p class="label"> Birth name: </p>
-          <p class="value"> venkatesh prabhu</p>
-        </div>
-
-        <!--end of birth name -->
-        <!-- start of height -->
-        <div class="row-container">
-          <p class="label">Height : </p>
-          <p class="value"> 5'6"(1.68m)</p>
-        </div>
-        <!-- end of height -->
-        <!-- start of mini bio -->
-        <div class="row-container">
-          <p class="label"> Mini Bio :</p>
-          <p class="value"> Venkatesh Prabhu known by his stage name <u>Dhanush</u>, is an Indian film actor, producer,
-            lyricist and playback
-            singer who has worked predominantly in Tamil cinema. In 2011, he won the National Film Award for Best Actor
-            for the Tamil film "Aadukalam" and in the same year, he received international attention for his song "Why
-            This Kolaveri Di", which went on to became the most viewed Indian song in YouTube.As of 2014, he has won
-            five
-            Filmfare Awards.<br><br>
-            His first film was <span class="highlight-word-color">"Thulluvadho Ilamai"</span>, a 2002 coming-of-age
-            movie
-            directed by his father,Kasthuri Raja.Over the next ten years, Dhanush featured in 25 movies and made his
-            Hindi
-            debut in <span class="highlight-word-color">"Raanjhanaa"</span> in the year 2013.
-          </p>
-        </div>
-        <!-- end of mini bio -->
 
 
-      </div>
-      <h4>Website created by Anbarasan.M</h4>
+        <img id="Aboutme" class="anbu_pic" src="anbu.png">
+        <p class="six"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin ex et aliquam
+            porta. Maecenas tincidunt sem ut nunc venenatis, quis luctus odio tempor. Vivamus a consectetur purus.
+            Curabitur eleifend erat ex, porttitor sagittis arcu ullamcorper nec. Ut faucibus elit lacus, ut ornare odio
+            sodales a. Vivamus rutrum urna ut mollis fermentum. Morbi vulputate maximus tempor. Mauris suscipit lectus
+            et pretium cursus. Ut sed purus metus. Quisque tempus tortor nulla, nec mollis odio pretium ac. Curabitur
+            sit amet dolor id sem gravida dignissim. Aliquam interdum condimentum ligula ac facilisis.
+
+        </p>
+
+        <p class="eight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin ex et aliquam
+            porta. Maecenas tincidunt sem ut nunc venenatis, quis luctus odio tempor. Vivamus a consectetur purus.
+            Curabitur eleifend erat ex, porttitor sagittis arcu ullamcorper nec. Ut faucibus elit lacus, ut ornare odio
+            sodales a. Vivamus rutrum urna ut mollis fermentum. Morbi vulputate maximus tempor. Mauris suscipit lectus
+            et pretium cursus. Ut sed purus metus. Quisque tempus tortor nulla, nec mollis odio pretium ac. Curabitur
+            sit amet dolor id sem gravida dignissim. Aliquam interdum condimentum ligula ac facilisis.
+
+        </p>
+
+
 
 
     </div>
-    
-    
+    <div><img class="anbu1pic" src="anbu.png"></div>
+    <div>
+        <h2 id="Experience" class="nine">Experience</h2>
+    </div>
+
+    <div class="rectangle">
+        <div><img class="blue" src="blue.png"></div>
+        <div>
+            <h2 class="ten">Machine operator</h2>
+        </div>
+        <div>
+            <h2 class="eleven">2 Year Experience</h2>
+        </div>
+    </div>
+
+    <div class="rectangle">
+        <div><img class="red" src="red.png"></div>
+        <div>
+            <h2 class="twelve">Sales Executive</h2>
+        </div>
+        <div>
+            <h2 class="thirteen">3 Year Experience</h2>
+        </div>
+    </div>
+
+    <div class="rectangle">
+        <div><img class="black" src="black.png"></div>
+        <div>
+            <h2 class="fourteen">Developer</h2>
+        </div>
+        <div>
+            <h2 class="fifteen">1 Year Experience</h2>
+        </div>
+    </div>
+    </div>
 
 
+    <div>
+        <h2 id="Contactme" class="sixteen">Contact Me</h2>
+    </div>
+
+    <div class="input">
+        <label>Name</label><br><br>
+        <label>phone</label><br><br>
+        <label>Email</label><br><br>
+        <label>Address</label>
+    </div>
+    </div>
+    <div>
+        <input class="seventeen"></input>
+    </div>
+    <div>
+        <input class="eighteen"></input>
+    </div>
+    <div>
+        <input class="nineteen"></input>
+    </div>
+    <div>
+        <input class="twenteen"></input>
+    </div>
+    <div>
+        <h2 class="twentyone"></h2>
+    </div>
+    <div>
+        <input type="submit" class="twentythree"></h2>
+    </div>
+    <div><img class="twentyfour" src="phone.png"></div>
+    <div>
+        <h2 class="cow"></h2>
+    </div>
+    <div>
+        <h2 class="twentyfive">(c)Anbarasan Website Private Limited</h2>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
-  </body>
+</body>
 
 </html>
-
-
-
-	
