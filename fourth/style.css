@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+}
+.parent {
+  padding-top: 30px;
+  height: 120px;
+  background: #09003c;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem !important;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.child2 {
+  width: 30%;
+}
+.searchbox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.search {
+  width: 40%;
+  border: 3px solid blue;
+  outline: none;
+  color: #9dbfaf;
+  padding: 5px;
+}
+.search:focus {
+  color: black;
+  box-shadow: 0 0 5px blue;
+}
+.search-btn {
+  width: 40px;
+  height: 36px;
+  border: 1px solid blue;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: black;
+}
+.nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+  color: rgb(0, 176, 207);
+}
+.pic1 {
+  display: flex;
+  width: 100%;
+  height: 361px;
+}
+.flat {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #ffffff;
+  background-color: #09003c;
+  border: 1px solid #09003c;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+.wrap1 {
+  display: flex;
+  justify-content: space-around;
+}
+.wrap2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.card1 {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  margin-left: 15%;
+}
+.card2 {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  margin-left: 15%;
+}
+.big {
+  display: flex;
+}
+.rectangle {
+  width: 221px;
+  height: 230px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-left: 230px;
+}
+
+.news_event {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.news {
+  width: 40%;
+  min-height: 10rem;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+.card_wrapper {
+  display: flex;
+}
+.event {
+  width: 40%;
+  min-height: 10rem;
+  background-color: red;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+.card_content {
+  width: 15rem;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0.2rem;
+}
+.card_content img {
+  width: 100%;
+}
+.text_content {
+  padding: 0.5rem;
+}
+.text_content p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.news_event1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.card_wrapper1 {
+  display: flex;
+}
+.event {
+  position: absolute;
+  /* display: flex; */
+  /* width: 45%; */
+  min-height: 10rem;
+  background-color: white;
+  /* padding-left: 5%; */
+  /* margin-top: 60px; */
+  box-sizing: border-box;
+}
+
+.card_content1 {
+  width: 15rem;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0.2rem;
+}
+.card_content1 img {
+  width: 100%;
+}
+.text_content1 {
+  padding: 0.5rem;
+}
+.text_content1 p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+.text {
+  margin-left: 70px;
+  margin-right: 400px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff;
+}
+.full {
+  display: flex;
+  background: #09003c;
+  padding: 10rem;
+}
+.camp {
+  display: flex;
+}
+.right {
+  margin-left: 400px;
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+hr{
+  
+  border: 1px solid #FFFFFF;
+  margin:0px;
+}
+.footer{
+  display:flex;
+  background: #09003c;
+  padding:6rem;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.footer a{
+  text-decoration: none;
+  color:#ffffff ;
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus {
+  color: rgb(0, 176, 207);
+}
