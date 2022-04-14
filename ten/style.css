@@ -1,0 +1,29 @@
+ h1{
+    text-align: center;
+    font-size: 30px;
+    color:red;
+    
+}
+.area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.area img{
+    height:50vh;
+    object-fit:cover;
+    flex-grow:1;
+}
+
+.photo {
+    padding: 0 20px 20px;
+}
+.area img:hover{
+    /* opacity: .5; */
+    padding:20px;
+    transition: .9s;
+    box-sizing:border-box;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,103,9,1) 27%, rgba(140,8,137,1) 44%, rgba(15,152,7,1) 65%, rgba(0,212,255,1) 100%);
+} 
